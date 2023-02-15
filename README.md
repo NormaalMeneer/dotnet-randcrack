@@ -7,7 +7,7 @@ A pseudo random number generator generates numbers based on an internal state. I
 ## How to use
 In order to use RandCrack you have to create a `RandCrack` object and give it an array of at least 55 consecutively generated 32 bit numbers. These 55 numbers are necessary to determine the state of the generator. After that, you can predict the coming numbers in the same way as you would generate them with a `Random` object.
 
-```
+```csharp
 Random r = new Random(secretseed);
 
 // Generate at least 55 numbers, these are used to determine the state of the generator
