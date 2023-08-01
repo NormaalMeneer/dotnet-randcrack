@@ -11,14 +11,14 @@ In order to use RandCrack you have to create a `RandCrack` object and give it an
 Random r = new Random(secretseed);
 
 // Generate at least 55 numbers, these are used to determine the state of the generator
-int[] series = new int[55]
-for(int i = 0 ; i< series.Lengthm ; i++)
+int[] series = new int[55];
+for(int i = 0 ; i< series.Length ; i++)
 {
   series[i] = r.Next();
 }
 
 RandCracker rc = new RandCracker(series);
-int pred = rc.Next();
+int pred = rc.PredictNext();
 int actual = r.Next();
 
 Console.WriteLine("Random result " + actual + " | Predicted result " +  pred);
