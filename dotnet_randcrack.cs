@@ -60,12 +60,12 @@ namespace RandCracker
             return (int)(PredictSample() * maxValue);
         }
 
-        public double NextDouble()
+        public double PredictNextDouble()
         {
             return PredictSample();
         }
 
-        public void NextBytes(byte[] buffer)
+        public void PredictNextBytes(byte[] buffer)
         {
             if(buffer == null)
             {
